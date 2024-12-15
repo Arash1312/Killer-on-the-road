@@ -52,6 +52,8 @@ TokenCorrect t = TokenCorrect(_token);
 
         assert(xPost == xPre - _amt);
         assert(yPost == yPre + _amt);
+        assert(xPost == xPre - _amt);
+        assert(yPost == yPre + _amt);
     }
  assert(xPost == xPre - _amt);
         assert(yPost == yPre + _amt);
