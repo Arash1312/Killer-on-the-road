@@ -1,11 +1,5 @@
 
 
- a
-        require(xPre >= _amt);
-        uint yPre = t.balanceOf(_to);
- TokenCorrect t = TokenCorrect(_token);
- TokenCorrect t = TokenCorrect(_token);
-
         uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
         uint xPre = t.balanceOf(address(this));
@@ -137,6 +131,12 @@ pragma solidity >=0.8.0;
 contract Test {
    
        
+ a
+        require(xPre >= _amt);
+        uint yPre = t.balanceOf(_to);
+ TokenCorrect t = TokenCorrect(_token);
+ TokenCorrect t = TokenCorrect(_token);
+
         uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
         uint yPre = t.balanceOf(_to);
