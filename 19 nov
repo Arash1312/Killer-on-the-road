@@ -1,10 +1,6 @@
 
 
-        uint xPre = t.balanceOf(address(this));
-        require(xPre >= _amt);
-        uint xPre = t.balanceOf(address(this));
-        require(xPre >= _amt);
-        TokenCorrect t = TokenCorrect(_token);
+       
 contract Test {
     function property_transfer(address _token, address _to, uint _amt) public {
         require(_to != address(this));
@@ -33,7 +29,11 @@ TokenCorrect t = TokenCorrect(_token);
   t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
-
+ uint xPre = t.balanceOf(address(this));
+        require(xPre >= _amt);
+        uint xPre = t.balanceOf(address(this));
+        require(xPre >= _amt);
+        TokenCorrect t = TokenCorrect(_token);
         uint yPre = t.balanceOf(_to);
  assert(xPost == xPre - _amt);
         assert(yPost == yPre + _amt);
