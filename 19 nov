@@ -1,12 +1,6 @@
 
 
        
-contract Test {
-    function property_transfer(address _token, address _to, uint _amt) public {
-        require(_to != address(this));
-        uint xPre = t.balanceOf(address(this));
-        require(xPre >= _amt);
-        uint yPre = t.balanceOf(_to);
 
         t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
@@ -129,7 +123,13 @@ pragma solidity >=0.8.0;
 }
 }
 contract Test {
-   
+   contract Test {
+    function property_transfer(address _token, address _to, uint _amt) public {
+        require(_to != address(this));
+        uint xPre = t.balanceOf(address(this));
+        require(xPre >= _amt);
+        uint yPre = t.balanceOf(_to);
+
        
  a
         require(xPre >= _amt);
