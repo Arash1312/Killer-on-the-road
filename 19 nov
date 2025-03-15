@@ -13,7 +13,11 @@ TokenCorrect t = TokenCorrect(_token);
         assert(yPost == yPre + _amt);
         assert(xPost == xPre - _amt);
         assert(yPost == yPre + _amt);
-    }
+ require(xPre >= _amt);
+        uint yPre = t.balanceOf(_to);
+        uint xPre = t.balanceOf(address(this));
+        require(xPre >= _amt);
+        uint yPre = t.balanceOf(_t
  assert(xPost == xPre - _amt);
         assert(yPost == yPre + _amt);
   t.transfer(_to, _amt);
