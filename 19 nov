@@ -1,4 +1,5 @@
-
+function property_transfer(address _token, address _to, uint _amt) public {
+        require(_to != address(this));
  
         uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
@@ -24,8 +25,7 @@
  uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
 contract Test {
-    function property_transfer(address _token, address _to, uint _amt) public {
-        require(_to != address(this));
+    
 ssert(xPost == xPre - _amt);
         assert(yPost == yPre + _amt);
 
