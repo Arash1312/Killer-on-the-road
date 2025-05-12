@@ -1,11 +1,11 @@
-function property_transfer(address _token, address _to, uint _amt) public {
-        require(_to != address(this));
+
  
         uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
         TokenCorrect t = TokenCorrect(_token);
         uint yPre = t.balanceOf(_to);
- 
+ function property_transfer(address _token, address _to, uint _amt) public {
+        require(_to != address(this));
 }
         t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
