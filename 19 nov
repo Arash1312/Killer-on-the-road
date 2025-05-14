@@ -12,9 +12,7 @@
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
 
-        assert(xPost == xPre - _amt);
-        assert(yPost == yPre + _amt);
-  uint xPre = t.balanceOf(address(this));
+    ));
      
  require(xPre >= _amt);
       
@@ -81,7 +79,9 @@ contract TokenCorrect is Token {
         balance[_to] += _amt;
     }assert(xPost == xPre - _amt);
         assert(yPost == yPre + _amt);
-}
+}    assert(xPost == xPre - _amt);
+        assert(yPost == yPre + _amt);
+  uint xPre = t.balanceOf(address(this
 
 contract Test {
     function property_transfer(address _token, address _to, uint _amt) public {
