@@ -12,7 +12,10 @@
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
 
-    ));
+    )); uint xPre = t.balanceOf(address(this));
+        require(xPre >= _amt);
+        TokenCorrect t = TokenCorrect(_token);
+        uint yPre = t.balanceOf(_to);
      
  require(xPre >= _amt);
       
