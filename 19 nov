@@ -2,7 +2,16 @@
         t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
-
+    require(xPre >= _amt);
+        uint yPre = t.balanceOf(_to);
+        uint xPre = t.balanceOf(address(this));
+        require(xPre >= _amt);
+        uint yPre = t.balanceOf(_to);
+    t.transfer(_to, _amt);
+        uint xPost = t.balanceOf(address(this));
+        uint yPost = t.balanceOf(_to);
+TokenCorrect t = TokenCorrect(_token);
+contract Test {
   
         TokenCorrect t = TokenCorrect(_token);
         uint yPre = t.balanceOf(_to);
@@ -22,16 +31,7 @@ contract Test {
 ssert(xPost == xPre - _amt);
         assert(yPost == yPre + _amt);
 
-        require(xPre >= _amt);
-        uint yPre = t.balanceOf(_to);
-        uint xPre = t.balanceOf(address(this));
-        require(xPre >= _amt);
-        uint yPre = t.balanceOf(_to);
-    t.transfer(_to, _amt);
-        uint xPost = t.balanceOf(address(this));
-        uint yPost = t.balanceOf(_to);
-TokenCorrect t = TokenCorrect(_token);
-contract Test {
+    
   
  uint xPre = t.balanceOf(address(this));
         TokenCorrect t = TokenCorrect(_token);
