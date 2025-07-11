@@ -1,4 +1,9 @@
- 
+ }set data here
+ok do it 
+contract TokenCorrect is Token {
+    mapping (address => uint) balance;
+    constructor(address _a, uint _b) {
+        balance[_a] = _b;
      
         uint yPre = t.balanceOf(_to);
     t.transfer(_to, _amt);
@@ -59,12 +64,7 @@ contract Test {
 interface Token {
     function balanceOf(address _a) external view returns (uint);
     function transfer(address _to, uint _amt) external;
-}set data here
-ok do it 
-contract TokenCorrect is Token {
-    mapping (address => uint) balance;
-    constructor(address _a, uint _b) {
-        balance[_a] = _b;
+
     }
     function balanceOf(address _a) public view override returns (uint) {
            assert(xPost == xPre - _amt);
