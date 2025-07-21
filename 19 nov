@@ -1,15 +1,6 @@
  }set data here
 ok do it 
-contract TokenCorrect is Token {
-    mapping (address => uint) balance;
-    constructor(address _a, uint _b) {
-        balance[_a] = _b;
-     ssert(xPost == xPre - _amt);
-        assert(yPost == yPre + _amt);
-   t.transfer(_to, _amt);
-        uint xPost = t.balanceOf(address(this));
-        uint yPost = t.balanceOf(_to);
-        uint yPre = t.balanceOf(_to);
+
     t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
@@ -37,7 +28,16 @@ contract Test {
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
         assert(yPost == yPre + _amt);
-  
+  contract TokenCorrect is Token {
+    mapping (address => uint) balance;
+    constructor(address _a, uint _b) {
+        balance[_a] = _b;
+     ssert(xPost == xPre - _amt);
+        assert(yPost == yPre + _amt);
+   t.transfer(_to, _amt);
+        uint xPost = t.balanceOf(address(this));
+        uint yPost = t.balanceOf(_to);
+        uint yPre = t.balanceOf(_to);
  uint xPre = t.balanceOf(address(this));
         TokenCorrect t = TokenCorrect(_token);
 contract Test {
