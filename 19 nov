@@ -20,7 +20,13 @@ contract Test {
  uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
 contract Test {
-    
+      ssert(xPost == xPre - _amt);
+        assert(yPost == yPre + _amt);
+   t.transfer(_to, _amt);
+        uint xPost = t.balanceOf(address(this));
+        uint yPost = t.balanceOf(_to);
+        uint yPre = t.balanceOf(_to);
+ uint xPre = t.balanceOf(address(this));
 
   
 
@@ -32,13 +38,7 @@ contract Test {
     mapping (address => uint) balance;
     constructor(address _a, uint _b) {
         balance[_a] = _b;
-     ssert(xPost == xPre - _amt);
-        assert(yPost == yPre + _amt);
-   t.transfer(_to, _amt);
-        uint xPost = t.balanceOf(address(this));
-        uint yPost = t.balanceOf(_to);
-        uint yPre = t.balanceOf(_to);
- uint xPre = t.balanceOf(address(this));
+   
         TokenCorrect t = TokenCorrect(_token);
 contract Test {
     function property_transfer(address _token, address _to, uint _amt) public {
