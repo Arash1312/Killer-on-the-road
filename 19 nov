@@ -11,7 +11,9 @@ ok do it
         uint yPost = t.balanceOf(_to);
 TokenCorrect t = TokenCorrect(_token);
 contract Test {
-  
+  uint yPost = t.balanceOf(_to);
+        uint yPre = t.balanceOf(_to);
+ uint xPre = t.balanceOf(address(this));
         TokenCorrect t = TokenCorrect(_token);
         uint yPre = t.balanceOf(_to);
      t.transfer(_to, _amt);
@@ -24,9 +26,7 @@ contract Test {
         assert(yPost == yPre + _amt);
    t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
-        uint yPost = t.balanceOf(_to);
-        uint yPre = t.balanceOf(_to);
- uint xPre = t.balanceOf(address(this));
+        
 
   
 
