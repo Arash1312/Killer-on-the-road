@@ -8,7 +8,11 @@ ok do it
         t.transfer(_to, _amt);
     t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
-        uint yPost = t.balanceOf(_to);
+         uint xPre = t.balanceOf(address(this));
+        require(xPre >= _amt);
+contract Test {
+      ssert(xPost == xPre - _amt);
+        assert(yPost == yPre + _amt);uint yPost = t.balanceOf(_to);
 TokenCorrect t = TokenCorrect(_token);
 contract Test {
   uint yPost = t.balanceOf(_to);
@@ -19,11 +23,7 @@ contract Test {
      t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
- uint xPre = t.balanceOf(address(this));
-        require(xPre >= _amt);
-contract Test {
-      ssert(xPost == xPre - _amt);
-        assert(yPost == yPre + _amt);
+
    t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
         
