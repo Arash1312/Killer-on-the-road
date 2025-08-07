@@ -25,7 +25,11 @@ contract Test {
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
 
-  
+   require(xPre >= _amt);
+        t.transfer(_to, _amt);
+    t.transfer(_to, _amt);
+        uint xPost = t.balanceOf(address(this));
+         uint xPre = t.balanceOf(address(this));
         
 
   
