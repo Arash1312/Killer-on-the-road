@@ -1,9 +1,4 @@
- }set data here
-ok do it 
- t.transfer(_to, _amt);
-    t  require(xPre >= _amt);
-        t.transfer(_to, _amt);
-    t.transfer(_to, _amt);
+
         uint xPost = t.balanceOf(address(this));
          uint xPre = t.balanceOf(address(this));
 contract Test {
@@ -26,7 +21,12 @@ contract Test {
         uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
      require(xPre >= _amt);
- 
+  }set data here
+ok do it 
+ t.transfer(_to, _amt);
+    t  require(xPre >= _amt);
+        t.transfer(_to, _amt);
+    t.transfer(_to, _amt);
          t.transfer(_to, _amt);
     t  require(xPre >= _amt);
         t.transfer(_to, _amt);
