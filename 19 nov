@@ -21,13 +21,7 @@ contract Test {
         uint xPre = t.balanceOf(address(this));
         require(xPre >= _amt);
      require(xPre >= _amt);
-  }set data here
-ok do it 
- t.transfer(_to, _amt);
-    t  require(xPre >= _amt);
-        t.transfer(_to, _amt);
-    t.transfer(_to, _amt);
-         t.transfer(_to, _amt);
+ 
     t  require(xPre >= _amt);
         t.transfer(_to, _amt);
     t.transfer(_to, _amt);
@@ -70,7 +64,13 @@ contract Test {
         t.transfer(_to, _amt);
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
-
+ }set data here
+ok do it 
+ t.transfer(_to, _amt);
+    t  require(xPre >= _amt);
+        t.transfer(_to, _amt);
+    t.transfer(_to, _amt);
+         t.transfer(_to, _amt);
         assert(xPost == xPre - _amt);
 interface Token {
     function balanceOf(address _a) external view returns (uint);
