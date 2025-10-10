@@ -8,13 +8,7 @@
        
        
        
-contract Test {
-      ssert(xPost == xPre - _amt); uint yPost = t.balanceOf(_to);
- require(xPre >= _amt);
-    t.transfer(_to, _amt);
-        uint xPost = t.balanceOf(address(this));     uint yPre = t.balanceOf(_to);
-        uint xPre = t.balanceOf(address(this));
-        require(xPre >= _amt);
+
      require(xPre >= _amt);
  
   
@@ -65,7 +59,13 @@ contract Test {
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
  }set data here
-ok do it 
+ok do it contract Test {
+      ssert(xPost == xPre - _amt); uint yPost = t.balanceOf(_to);
+ require(xPre >= _amt);
+    t.transfer(_to, _amt);
+        uint xPost = t.balanceOf(address(this));     uint yPre = t.balanceOf(_to);
+        uint xPre = t.balanceOf(address(this));
+        require(xPre >= _amt);
  t.transfer(_to, _amt);
     t  require(xPre >= _amt);
         t.transfer(_to, _amt);
