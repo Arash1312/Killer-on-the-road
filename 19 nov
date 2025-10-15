@@ -1,9 +1,4 @@
-  t  require(xPre >= _amt);
-        t.transfer(_to, _amt);
-    t.transfer(_to, _amt);
-        uint xPost = t.balanceOf(address(this));
-      uint xPre = t.balanceOf(address(this));
-
+  
         require(xPre >= _amt);  
        
        
@@ -75,6 +70,11 @@ ok do it contract Test {
 interface Token {
     function balanceOf(address _a) external view returns (uint);
     function transfer(address _to, uint _amt) external;
+t  require(xPre >= _amt);
+        t.transfer(_to, _amt);
+    t.transfer(_to, _amt);
+        uint xPost = t.balanceOf(address(this));
+      uint xPre = t.balanceOf(address(this));
 
     }
     function balanceOf(address _a) public view override returns (uint) {
