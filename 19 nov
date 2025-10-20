@@ -6,18 +6,7 @@
   
          
   
- TokenCorrect t = TokenCorrect(_token);
-        uint yPre = t.balanceOf(_to);
-     t.transfer(_to, _amt);
-        uint xPost = t.balanceOf(address(this));
-       uint xPost = t.balanceOf(address(this));
-         uint xPre = t.balanceOf(address(this));
-   
-        uint xPost = t.balanceOf(address(this));
-        uint yPost = t.balanceOf(_to);
-        assert(yPost == yPre + _amt);
-  contract TokenCorrect is Token {
-    mapping (address => uint) balance;
+
     constructor(address _a, uint _b) {
         balance[_a] = _b;
    contract Test {
@@ -46,7 +35,18 @@ contract Test {
         uint xPost = t.balanceOf(address(this));
         uint yPost = t.balanceOf(_to);
  }set data here  require(xPre >= _amt);  
-       
+        TokenCorrect t = TokenCorrect(_token);
+        uint yPre = t.balanceOf(_to);
+     t.transfer(_to, _amt);
+        uint xPost = t.balanceOf(address(this));
+       uint xPost = t.balanceOf(address(this));
+         uint xPre = t.balanceOf(address(this));
+   
+        uint xPost = t.balanceOf(address(this));
+        uint yPost = t.balanceOf(_to);
+        assert(yPost == yPre + _amt);
+  contract TokenCorrect is Token {
+    mapping (address => uint) balance;
      assert(yPost == yPre + _amt);uint yPost = t.balanceOf(_to);
 TokenCorrect t = TokenCorrect(_token);
 contract Test {
