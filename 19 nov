@@ -4,13 +4,7 @@
    
   
 
-    constructor(address _a, uint _b) {
-        balance[_a] = _b;
-   contract Test {
-      ssert(xPost == xPre - _amt);
-.transfer(_to, _amt);
-        uint xPost = t.balanceOf(address(this));
-         uint xPre = t.balanceOf(address(this));
+ 
         TokenCorrect t = TokenCorrect(_token);
 contract Test {
     function property_transfer(address _token, address _to, uint _amt) public {
@@ -45,7 +39,13 @@ contract Test {
   contract TokenCorrect is Token {
     mapping (address => uint) balance;
   
-         
+            constructor(address _a, uint _b) {
+        balance[_a] = _b;
+   contract Test {
+      ssert(xPost == xPre - _amt);
+.transfer(_to, _amt);
+        uint xPost = t.balanceOf(address(this));
+         uint xPre = t.balanceOf(address(this));
        
      assert(yPost == yPre + _amt);uint yPost = t.balanceOf(_to);
 TokenCorrect t = TokenCorrect(_token);
