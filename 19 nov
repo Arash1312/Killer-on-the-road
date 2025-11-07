@@ -1,5 +1,10 @@
   
-      
+      TokenCorrect t = TokenCorrect(_token);
+contract Test {
+  uint yPost = t.balanceOf(_to);
+        uint yPre = t.balanceOf(_to);
+ uint xPre = t.balanceOf(address(this));   
+       
 
    
   
@@ -48,12 +53,7 @@ contract Test {
          uint xPre = t.balanceOf(address(this));
        
      assert(yPost == yPre + _amt);uint yPost = t.balanceOf(_to);
-TokenCorrect t = TokenCorrect(_token);
-contract Test {
-  uint yPost = t.balanceOf(_to);
-        uint yPre = t.balanceOf(_to);
- uint xPre = t.balanceOf(address(this));   
-       
+
 ok do it contract Test {
       ssert(xPost == xPre - _amt); uint yPost = t.balanceOf(_to);
  require(xPre >= _amt);
