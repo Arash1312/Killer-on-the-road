@@ -7,17 +7,6 @@ A small, fully-documented example GitHub repository that simulates a robot vacuu
 
 ## File structure
 
-```
-robot-vacuum-simulator/
-├─ README.md
-├─ LICENSE
-├─ .gitignore
-├─ vacuum.py         # main simulator / simple CLI
-├─ room_map.py       # small helper to represent a room grid
-├─ requirements.txt  # optional (none required for plain Python)
-└─ tests/
-   └─ test_vacuum.py
-```
 
 ---
 
@@ -62,7 +51,18 @@ python vacuum.py --rows 6 --cols 8 --dirt 12
 MIT License. See `LICENSE` file.
 
 ```
+``````
+robot-vacuum-simulator/
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+├─ vacuum.py         # main simulator / simple CLI
+├─ room_map.py       # small helper to represent a room grid
+├─ requirements.txt  # optional (none required for plain Python)
+└─ tests/
+   └─ test_vacuum.py
 ```
+
 
 ---
 
